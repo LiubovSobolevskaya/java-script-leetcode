@@ -4,8 +4,8 @@
 
 
 const seenSymbols = [];
-
 let objCounter = 0;
+
 const parser = (_, val) => {
     if (typeof val === 'symbol') {
         const idx = seenSymbols.indexOf(val);
