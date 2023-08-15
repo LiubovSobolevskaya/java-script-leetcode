@@ -9,7 +9,7 @@ var compactObject = function (obj) {
     if (Array.isArray(obj)) {
         return obj.filter(Boolean).map(compactObject);
     }
-    const output = 
+    const output = {};
     for (const key in obj) {
         const value = compactObject(obj[key]);
         if (Boolean(value)) {
